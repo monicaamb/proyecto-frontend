@@ -1,0 +1,113 @@
+// header
+a
+  text-decoration: none
+  color: #fff
+  font-size: 3rem
+
+button
+  background-color: transparent
+  border: 0
+
+.header
+  height: 12.5rem
+  background:
+    image: url("../img/home-phone/fondo-landing.png")
+    size: cover
+    repeat: no-repeat
+  .typewriter
+    margin-top: 3.6rem
+    color: $color_blanco
+    text-align: center
+    font-size: 1.1rem
+  &__icon
+    width: 8rem
+    bottom: -9.3rem
+    right: -15.1rem
+    position: relative
+    &__frase
+      margin-top: 3.8rem
+      color: $color_blanco
+      font-size: 1rem
+      text-align: center
+
+//menu
+.nav
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  background-color: $color_menu_phone
+  transform: translateX(-100vw)
+  transition: .5s
+  z-index: 100
+  justify-content: center
+  align-items: center
+  display: flex
+  &__ul
+    font-size: 2.5rem
+    margin: 0
+    padding: 0
+    list-style: none
+  &--ver
+    transform: translateX(0)
+  &__abrir-menu
+    width: 100%
+    background-color: $color_menu_phone
+    height: 3.04rem
+  &__abrir-menu-img
+    width: 2rem
+    margin-left: -21rem
+    padding: .4rem
+  &__cerrar-menu-img
+    width: 11%
+    background-color: $color_verde_neon
+    border-radius: 1rem
+    padding: .5rem
+    margin: 1rem auto
+  &__img
+    width: 40%
+    display: block
+    margin: 0 auto
+
+.submenu
+  list-style: none
+  margin: 0
+  padding: 0
+
+.submenu > li > a
+  color: $color_verde_neon
+  display: flex
+  align-items: center
+  justify-content: center
+  padding-left: -1rem
+  font-size: 2.7rem
+  text-align: center
+  list-style: none
+
+.submenu > li
+  text-align: center
+  list-style: none
+
+.submenu > li > a
+  color: $color_verde_neon
+  display: block
+
+ul > .submenu
+  margin: 0
+  padding: 0
+
+.menu__item
+  margin: 1rem 0
+  text-align: center
+
+
+
+
+
+
+
+
+
+
+

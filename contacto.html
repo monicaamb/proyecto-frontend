@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>Contacto</title>
+    <link rel="icon" type="image/png" href="img/home/favicon.png">
+    <meta name="theme-color" content="#3c790a">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+    <meta name="author" content="Mónica">
+    <meta name="generator" content="Clojure">
+    <meta name="keywords" content="blog, musica, pixel, art, canciones, conciertos">
+    <meta property="og:title" content="Blog Música">
+    <meta property="og:type" content="website">
+    <meta property="og:image:secure_url" content="https://...">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="400">
+    <meta property="og:image:height" content="300">
+    <meta property="og:image:alt" content="">
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link href="css/mobile.css" rel="stylesheet" media="all and (max-width: 600px)">
+    <link href="css/desktop.css" rel="stylesheet" media="all and (min-width: 600px)">
+    <!-- End CSS -->
+    <!-- Script JavaScript -->
+    <script src="https://cdn.jsdelivr.net/gh/tanrax/FFNM@1.5.0/dist/ffnm.min.js" integrity="sha384-qlI8XJcMcJMh52x4w9HA9ItB8KmW6pKaJXijVQFl6UvT1nGCH+U6Y7sbbc11HkCH" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script defer src="js/contacto.js"></script>
+    <!-- End Script JavaScript -->
+    <!-- Animation -->
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- End Animation -->
+</head>
+<body>
+<!-- HEADER -->
+<header class="header">
+    <div class="container">
+        <a href="index.html" class="header__logo">
+            <img src="img/home/PIXLMUSIC_reketbueno.png" alt="Pixl-Music_logo" class="header__icon">
+        </a>
+        <p class="typewriter">No me juzguéis por no tener ni idea de música</p>
+    </div>
+</header>
+<nav class="nav" id="nav">
+    <div class="container">
+        <a href="index.html" class="nav__castillo">
+            <img src="img/home-phone/castle.png" alt="Castillo" class="nav__img">
+        </a>
+        <ul class="nav__ul">
+            <li class="menu__item">
+                <a class="nav__link">Canciones</a>
+                <ul class="submenu">
+                    <li>
+                        <a href="canciones-rock.html">Rock</a>
+                    </li>
+                    <li>
+                        <a href="canciones-poprock.html">Pop-Rock</a>
+                    </li>
+                    <li>
+                        <a href="canciones-hiphop.html">Hip-Hop</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="menu__item">
+                <a href="noticias.html" class="nav__link">Noticias</a>
+            </li>
+            <li class="menu__item">
+                <a href="conciertos.html" class="nav__link">Conciertos</a>
+            </li>
+            <li class="menu__item">
+                <a href="contacto.html" class="nav__link">Contacto</a>
+            </li>
+        </ul>
+        <!-- Boton hamburguesita cerrar-->
+        <button class="nav__cerrar-menu" is-click="class:remove('nav--ver', '#nav')">
+            <img src="img/home-phone/close.png" alt="Cerrar-menu" class="nav__cerrar-menu-img">
+        </button>
+        <!-- End Boton hamburguesita cerrar-->
+    </div>
+</nav>
+<!-- Boton hamburguesita abrir-->
+<button class="nav__abrir-menu" is-click="class:add('nav--ver', '#nav')">
+    <img src="img/home-phone/menu.png" alt="Abrir-menu" class="nav__abrir-menu-img">
+</button>
+<!-- End Boton hamburguesita abrir -->
+<!-- END HEADER -->
+<!-- MAIN -->
+<section class="contacto">
+    <div class="container">
+        <img src="img/home/PIXLMUSIC_reketbueno.png" alt="Pixl-Music_logo" class="form__img">
+        <p class="form__texto">Me gustaría que formaras parte de 'Pixl Music' o simplemente me enriquecieras con tus aportaciones y/o sugerencias :-)</p>
+    <form id="formulario-contacto" action="https://formspree.io/f/mwkaevpy" method="post">
+        <img class="form__gato" src="img/contact/contacto.png" alt="Gato mágico">
+        <p>
+            <label class="form__label">
+                Nombre*
+                <br><input class="form__input" name="Nombre" type="text" id="nombre-contacto">
+            </label>
+        </p>
+        <p>
+            <label class="form__label">
+                Apellidos
+                <br><input class="form__input" name="Apellidos" type="text" id="apellido-contacto">
+            </label>
+        </p>
+        <p>
+            <label class="form__label">
+                Mensaje*
+                <br><textarea class="form__textarea" name="Mensaje" type="text" id="comentario-contacto"></textarea>
+            </label>
+        </p>
+        <p>
+            <label class="form__acepto">Acepto las <a class="form__politica" href="politica.html">condiciones de uso y privacidad</a></label>
+            <input name="test" type="checkbox" id="condiciones-contacto">
+        </p>
+        <p>
+            <input name="Enviar" type="submit" value="Enviar" class="form__enviar" id="enviar-contacto">
+        </p>
+        <!-- Mensajes de error -->
+        <ul class="form__errores" id="errores-contacto"></ul>
+    </form>
+    </div>
+</section>
+</body>
+</html>

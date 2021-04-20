@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>Noticias</title>
+    <link rel="icon" type="image/png" href="img/home/favicon.png">
+    <meta name="theme-color" content="#3c790a">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+    <meta name="author" content="Mónica">
+    <meta name="generator" content="Clojure">
+    <meta name="keywords" content="blog, musica, pixel, art, canciones, conciertos">
+    <meta property="og:title" content="Blog Música">
+    <meta property="og:type" content="website">
+    <meta property="og:image:secure_url" content="https://...">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="400">
+    <meta property="og:image:height" content="300">
+    <meta property="og:image:alt" content="">
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link href="css/mobile.css" rel="stylesheet" media="all and (max-width: 600px)">
+    <link href="css/desktop.css" rel="stylesheet" media="all and (min-width: 600px)">
+    <!-- End CSS -->
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/gh/tanrax/FFNM@1.5.0/dist/ffnm.min.js" integrity="sha384-qlI8XJcMcJMh52x4w9HA9ItB8KmW6pKaJXijVQFl6UvT1nGCH+U6Y7sbbc11HkCH" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/vendors/vue.min.js"></script>
+    <script defer src="js/noticias.js"></script>
+    <!-- End Scripts -->
+    <!-- Animation -->
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- End Animation -->
+</head>
+<body>
+<!-- HEADER -->
+<header class="header">
+    <div class="container">
+        <a href="index.html" class="header__logo">
+            <img src="../img/home/PIXLMUSIC_reketbueno.png" alt="Pixl-Music_logo" class="header__icon">
+        </a>
+        <p class="typewriter">No me juzguéis por no tener ni idea de música</p>
+    </div>
+</header>
+<nav class="nav" id="nav">
+    <div class="container">
+        <a href="index.html" class="nav__castillo">
+            <img src="img/home-phone/castle.png" alt="Castillo" class="nav__img">
+        </a>
+        <ul class="nav__ul">
+            <li class="menu__item">
+                <a class="nav__link">Canciones</a>
+                <ul class="submenu">
+                    <li>
+                        <a href="canciones-rock.html">Rock</a>
+                    </li>
+                    <li>
+                        <a href="canciones-poprock.html">Pop-Rock</a>
+                    </li>
+                    <li>
+                        <a href="canciones-hiphop.html">Hip-Hop</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="menu__item">
+                <a href="noticias.html" class="nav__link">Noticias</a>
+            </li>
+            <li class="menu__item">
+                <a href="conciertos.html" class="nav__link">Conciertos</a>
+            </li>
+            <li class="menu__item">
+                <a href="contacto.html" class="nav__link">Contacto</a>
+            </li>
+        </ul>
+        <!-- Boton hamburguesita cerrar-->
+        <button class="nav__cerrar-menu" is-click="class:remove('nav--ver', '#nav')">
+            <img src="img/home-phone/close.png" alt="Cerrar-menu" class="nav__cerrar-menu-img">
+        </button>
+        <!-- End Boton hamburguesita cerrar-->
+    </div>
+</nav>
+<!-- Boton hamburguesita abrir-->
+<button class="nav__abrir-menu" is-click="class:add('nav--ver', '#nav')">
+    <img src="img/home-phone/menu.png" alt="Abrir-menu" class="nav__abrir-menu-img">
+</button>
+<!-- End Boton hamburguesita abrir -->
+<!-- END HEADER -->
+<!-- MAIN -->
+<main class="main noticia">
+    <div id="new-4">
+        <div class="container">
+            <p class="noticia__fecha">06/01/2021</p>
+            <p>
+                <img src="../img/home/floyd.jpg" alt="pink-floyd" class="noticia__img">
+            </p>
+            <h1 class="noticia__titulo">Pink Floyd: La razón por la que no<br> quisieron sonar en La Naranja Mecánica</h1>
+            <p class="noticia__texto">Pink Floyd saltó a la fama mundial durante los sesenta y setenta, mismas décadas en las que cobró popularidad Stanley Kubrick con películas como 2001: Odisea del espacio (1968) y La Naranja Mecánica (1971).</p>
+
+            <p class="noticia__texto">Fue precisamente durante la producción de la cinta basada en el libro de Anthony Burgess que el director neoyorkino trató de negociar con Roger Waters y compañía para incluir el tema "Atom Heart Mother" como parte de la banda sonora del filme. Ante la negativa del grupo británico, el cineasta tuvo que desistir y los fans de ambos quedaron bastante desconcertados: el estilo de Kubrick y el de los rockeros tenían bastantes puntos en común a nivel estético y conceptual.</p>
+            <p>
+                <img src="../img/news/naranja.jpg" alt="la-naranja-mecanica" class="noticia__img">
+            </p>
+            <p class="noticia__texto">No sería sino décadas más tarde que Nick Mason (baterista de Pink Floyd) daría explicaciones al respecto de esa inesperada decisión. En una entrevista con la revista Uncut, el percusionista confesó que le dijeron que no a Stanley porque él no los invitó a formar parte del soundtrack de 2001: Odisea del espacio en años anteriores, y aquello era algo que les hubiera encantado.</p>
+
+            <p class="noticia__texto">Tras detallar ese motivo, Mason reconoció que fue un gesto un tanto mezquino por parte de ellos: es consciente de que "¡suena un poco petulante!" tomar esa clase de determinaciones y perderse de semejante oportunidad. Pero no hay que perder de vista lo jóvenes e irreverentes que eran ellos por entonces.</p>
+            <hr class="separador">
+            <div class="noticias__enlaces-noticia--4">
+                <button @click="showModalComentarNoticia4 = true" class="noticia__comentar">Comentar</button>
+                <button @click="showModalComentariosNoticia4 = true" class="noticia__ver">Ver comentarios</button>
+            </div>
+        </div>
+        <!-- Comentar Noticia 4 -->
+        <div v-if="showModalComentarNoticia4" class="modal-comentar-noticias">
+            <form class="caja__noticias">
+                <div class="container">
+                    <p>
+                        <img class="caja__x" src="img/home-phone/close.png" @click="showModalComentarNoticia4 = false">
+                    </p>
+                    <p>
+                        <label>
+                            Nombre*
+                            <input v-model="nuevoNombreNoticia4" class="caja__nombre" type="text"/>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            Apellido(s)
+                            <input v-model="nuevoApellidoNoticia4" class="caja__apellidos" type="text"/>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            Comentario*
+                            <textarea v-model="nuevoComentarioNoticia4" class="caja__comentario" type="text"></textarea>
+                        </label>
+                    </p>
+                    <p v-if="!validoNuevoNombre && botonPulsadoNuevo" class="caja__requisito-nombre">
+                        ¡Oye! ¿Y tu nombre qué? Es más bonito de lo que crees
+                    </p>
+                    <p v-if="!validoNuevoComentario && botonPulsadoNuevo" class="caja__requisito-comentario">
+                        ¿De verdad no vas a comentar nada? :(
+                    </p>
+                    <p>
+                        <input @click.prevent="logicaCrearComentario"
+                               class="caja__enviar"
+                               type="submit"
+                               value="Enviar"
+                        />
+                    </p>
+                </div>
+            </form>
+        </div>
+        <!-- Fin Comentar Noticia 4 -->
+        <!-- Ver comentarios Comentar Noticia 4 -->
+        <article class="caja__articulo-noticias" v-for="item in datosPaginados">
+            <p class="caja__nombre-noticias">
+                {{ item.nombre }} {{ item.fields.Nombre }} {{ item.apellido }} {{ item.fields.Apellidos }}
+            </p>
+            <p class="caja__comentario-noticias">
+                {{ item.comentario }} {{ item.fields.Comentario }}
+            </p>
+        </article>
+        <nav>
+            <ul class="pagination">
+                <li @click.prevent="paginaAnterior"><div href="#" class="pagination__item">Anterior</div></li>
+                <li @click.prevent="contenidoPagina(pagina)" v-for="pagina in totalPaginas()"><div href="#">{{ pagina }}</div></li>
+                <li @click.prevent="paginaSiguiente"><div href="#" class="pagination__item">Siguiente</div></li>
+            </ul>
+        </nav>
+        <!-- Fin Ver comentarios Noticia 4 -->
+        <!-- Ver comentarios MÓVIL -->
+        <div v-if="showModalComentariosNoticia4" class="modal-criticas">
+            <div class="container">
+                <div class="caja-criticas">
+                    <p>
+                        <img class="caja__x-comentarios" src="img/home-phone/close.png" alt="" @click="showModalComentariosNoticia4 = false">
+                    </p>
+                    <div v-if="infosNoticia4.length > 0" class="caja__articulo">
+                        <article v-for="infoNoticia4 in infosNoticia4">
+                            <p class="caja__nombre-comentarios">
+                                {{ infoNoticia4.nombre }} {{ infoNoticia4.fields.Nombre }} {{ infoNoticia4.apellido }} {{ infoNoticia4.fields.Apellidos }}
+                            </p>
+                            <p class="caja__comentario-comentarios">
+                                {{ infoNoticia4.comentario }} {{ infoNoticia4.fields.Comentario }}
+                            </p>
+                        </article>
+                    </div>
+                    <p v-else class="spinner"></p>
+                </div>
+            </div>
+        </div>
+        <!-- Fin Ver comentarios MÓVIL -->
+    </div>
+</main>
+<!-- END MAIN -->

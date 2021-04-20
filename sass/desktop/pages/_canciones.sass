@@ -1,0 +1,255 @@
+.canciones
+  &__album:hover
+    opacity: 0.2
+    -webkit-transition: opacity 500ms
+    -moz-transition: opacity 500ms
+    -o-transition: opacity 500ms
+    -ms-transition: opacity 500ms
+    transition: opacity 500ms
+  &__cover
+    text-align: center
+    font-size: 1.5rem
+    display: flex
+    justify-content: center
+    align-items: center
+  &__cover--1
+    grid-column: 3 / 4
+    grid-row: 3 / 6
+  &__cover--2
+    grid-column: 3 / 4
+    grid-row: 7 / 8
+  &__cover--3
+    font-size: 1.3rem
+    grid-column: 3 / 4
+    grid-row: 7 / 8
+  &__cover--4
+    grid-column: 3 / 4
+    grid-row: 6 / 7
+  &__cover--5
+    grid-column: 3 / 4
+    grid-row: 7 / 8
+  &__cover--6
+    grid-column: 3 / 4
+    grid-row: 7 / 8
+  &__cover--7
+    grid-column: 3 / 4
+    grid-row: 6 / 7
+  &__cover--8
+    grid-column: 3 / 4
+    grid-row: 7 / 7
+  &__cover--9
+    grid-column: 3 / 4
+    grid-row: 7 / 7
+  &__frase
+    font-size: 2rem
+    text-align: center
+    color: $color_negro
+    background-color: $color_azulito
+    border: 4px solid $color_blanco
+    height: 3.5rem
+    width: 50%
+    margin: 4rem auto
+    padding: .4rem
+    align-items: center
+    justify-content: center
+    display: flex
+    &::after
+      content: '🎶'
+  &__rock--1
+    display: grid
+    grid-template-columns: repeat(15, 1fr)
+    grid-template-rows: repeat(9, 4.5rem)
+  &__album--1
+    width: 19rem
+    height: 19rem
+    grid-column: 3 / 4
+    grid-row: 3 / 6
+  &__ul-rock--1
+    grid-column: 5 / 8
+    grid-row: 1 / 5
+    margin-left: -2rem
+    list-style: none
+    font-size: 1.5rem
+    margin-top: -2.5rem
+  &__enlaces-rock--1
+    grid-column: 10 / 14
+    grid-row: 4 / 6
+    display: flex
+    grid-gap: 3.5rem
+    font-size: 1.5rem
+    align-items: center
+    margin: 4.3rem 1rem
+  &__rock--2
+    display: grid
+    grid-template-columns: repeat(15, 1fr)
+    grid-template-rows: repeat(10, 4.5rem)
+  &__album--2
+    width: 19rem
+    height: 19rem
+    grid-column: 3 / 4
+    grid-row: 4 / 7
+  &__ul-rock--2
+    grid-column: 5 / 8
+    grid-row: 2 / 6
+    margin-left: -2rem
+    list-style: none
+    font-size: 1.5rem
+    margin-top: -1.2rem
+  &__enlaces-rock--2
+    grid-column: 10 / 14
+    grid-row: 5 / 6
+    display: flex
+    grid-gap: 3.5rem
+    font-size: 1.5rem
+    align-items: center
+    margin-top: 4.3rem
+  &__rock--3
+    display: grid
+    grid-template-columns: repeat(15, 1fr)
+    grid-template-rows: repeat(10, 4.5rem)
+  &__album--3
+    width: 19rem
+    height: 19rem
+    grid-column: 3 / 4
+    grid-row: 4 / 7
+  &__ul-rock--3
+    grid-column: 5 / 8
+    grid-row: 2 / 6
+    margin-left: -2rem
+    list-style: none
+    font-size: 1.5rem
+    margin-top: -1.2rem
+  &__enlaces-rock--3
+    grid-column: 10 / 14
+    grid-row: 5 / 6
+    display: flex
+    grid-gap: 3.5rem
+    font-size: 1.5rem
+    align-items: center
+    margin-top: 4.3rem
+  &__comentar
+    color: $color_negro
+    border-radius: 50%
+    padding: 2rem
+    border: 1px solid $color_blanco
+    text-align: center
+    box-shadow: 0 0 14px 4px transparentize($color_azulito, .2)
+    cursor: pointer
+    &:hover
+      color: $color_blanco
+      background-color: $color_azulito
+  &__ver
+    color: $color_negro
+    padding: 1rem
+    border: 1px solid $color_blanco
+    text-align: center
+    box-shadow: 0 0 14px 4px transparentize($color_azulito, .2)
+    cursor: pointer
+    &:hover
+      color: $color_blanco
+      background-color: $color_azulito
+
+.caja
+  width: 60%
+  font-size: 2rem
+  padding: 1rem
+  background:
+    image: url("../img/home/comentar-musica.png")
+    size: cover
+  &__nombre, &__apellidos, &__comentario
+    width: 70%
+  &__x
+    display: block
+    width: 1.5rem
+    margin: 0 44.5rem
+    background: $color_blanco
+    border: 2px $color_fuchsia solid
+    border-radius: 1rem
+    padding: .2rem
+    cursor: pointer
+  &__x-comentarios
+    display: block
+    width: 1.5rem
+    margin: 0 44.5rem
+    background: $color_blanco
+    border: 2px $color_morado solid
+    border-radius: 1rem
+    padding: .2rem
+    cursor: pointer
+    position: fixed
+  &__articulo
+    margin: 0 4rem
+    padding: 1rem 0
+  &__enviar
+    border: 2px $color_fuchsia solid
+    cursor: pointer
+    margin: 0 auto
+    display: block
+    background: white
+  &__nombre-comentarios
+    color: $color_morado
+  &__comentario-comentarios
+    color: floralwhite
+  &__requisito-nombre
+    color: white
+    width: 81%
+    background: $color_alerta-canciones
+    font-weight: bold
+    font-size: 1.7rem
+  &__requisito-comentario
+    color: white
+    width: 57%
+    background: $color_alerta-canciones
+    font-weight: bold
+    font-size: 1.7rem
+    text-align: center
+
+.modal-comentar
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  background: $color_bg-comentar-canciones
+  display: flex
+  align-items: center
+  justify-content: center
+
+.caja-criticas
+  width: 60%
+  height: 75%
+  font-size: 2rem
+  background: $color_lila
+  overflow-y: scroll
+  .container
+    margin: 0
+    padding: 0
+
+.modal-criticas
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  background: $color_bg-comentarios-canciones
+  display: flex
+  align-items: center
+  justify-content: center
+
+.spinner
+  width: 20px
+  height: 20px
+  border-radius: 50%
+  border: 5px solid $color_blanco
+  background: transparent
+  border-top-color: $color_morado
+  border-bottom-color: $color_blanco
+  border-left-color: $color_morado
+  animation: spin 1.5s linear infinite
+  position: relative
+  margin: 0 auto
+
+@keyframes spin
+  0%
+    background: transparent
+    transform: rotate(720deg)

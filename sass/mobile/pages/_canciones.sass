@@ -1,0 +1,147 @@
+.canciones ul
+  list-style: none
+.canciones
+  background-color: transparentize($color_transparencia_canciones_phone, .7)
+  &__cover
+    text-align: center
+    font-size: 1.75rem
+    display: flex
+    justify-content: center
+    align-items: center
+    color: $color_blanco
+    background: $color_negro
+    margin-bottom: -.5rem
+  &__frase
+    font-size: 1.5rem
+    text-align: center
+    color: $color_negro
+    background-color: transparentize($color_blanco, .5)
+    border: 4px solid $color_amarillo
+    height: 4rem
+    width: 85%
+    padding: .4rem
+    margin: 0 auto
+    &::after
+      content: '🎶'
+  &__comentar
+    font-size: 1.75rem
+    color: $color_blanco
+    border-radius: 50%
+    padding: 2rem
+    border: 1px solid $color_blanco
+    text-align: center
+    box-shadow: 0 0 14px 4px transparentize($color_azulito, .2)
+  &__ver
+    font-size: 1.75rem
+    color: $color_blanco
+    padding: 1rem
+    border: 1px solid $color_blanco
+    text-align: center
+    box-shadow: 0 0 14px 4px transparentize(lightskyblue, .2)
+    margin: 1rem 0
+  &__ul-rock--1
+    text-align: center
+    padding: 0
+    color: $color_blanco
+    font-size: 1.75rem
+  &__album--1
+    margin-top: 1rem
+  &__enlaces-rock--1
+    display: flex
+    font-size: 1.5rem
+    align-items: center
+    flex-direction: column
+  &__ul-rock--2
+    text-align: center
+    padding: 0
+    color: $color_blanco
+    font-size: 1.75rem
+  &__album--2
+    margin-top: 1rem
+  &__enlaces-rock--2
+    display: flex
+    grid-gap: 1rem
+    font-size: 1.5rem
+    align-items: center
+    flex-direction: column
+  &__ul-rock--3
+    text-align: center
+    padding: 0
+    color: $color_blanco
+    font-size: 1.75rem
+  &__album--3
+    margin-top: 1rem
+  &__enlaces-rock--3
+    display: flex
+    grid-gap: 1rem
+    font-size: 1.5rem
+    align-items: center
+    flex-direction: column
+
+.caja
+  padding: 1rem
+  margin-top: 3rem
+  margin-bottom: 3rem
+  font-size: 1.75rem
+  color: $color_blanco
+  background-color: #07123D
+  &__x
+    background: $color_amarillo
+    display: block
+    width: 1.5rem
+    margin: -1rem 16rem
+    border-radius: 1rem
+    padding: .3rem
+  &__x-comentarios
+    background: $color_amarillo
+    display: block
+    width: 1.5rem
+    margin: 1rem 18rem
+    border-radius: 1rem
+    padding: .3rem
+  &__enviar
+    background: $color_amarillo
+    color: black
+    display: flex
+    margin: 0 auto
+    border: 2px solid black
+    padding: .6rem
+    width: 7rem
+    justify-content: center
+  &__nombre, &__apellidos, &__comentario
+    width: 98%
+  &__articulo
+    margin: 0 1rem
+    padding: 0 1rem
+  &__nombre-comentarios
+    color: $color_amarillo
+  &__requisito-nombre, &__requisito-comentario
+    color: $color_alerta-noticias
+    font-weight: bold
+    font-size: 1.7rem
+
+.caja-criticas
+  background-color: $color_negro
+  color: $color_blanco
+  font-size: 1.75rem
+  overflow-y: scroll
+  margin-bottom: 3rem
+  height: 65vh
+
+.spinner
+  width: 20px
+  height: 20px
+  border-radius: 50%
+  border: 5px solid $color_blanco
+  background: transparent
+  border-top-color: $color_amarillo
+  border-bottom-color: $color_blanco
+  border-left-color: $color_amarillo
+  animation: spin 1.5s linear infinite
+  position: relative
+  margin: 0 auto
+
+@keyframes spin
+  0%
+    background: transparent
+    transform: rotate(720deg)

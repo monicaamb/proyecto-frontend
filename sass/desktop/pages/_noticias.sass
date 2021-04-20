@@ -1,0 +1,129 @@
+.noticias
+  .container
+    display: grid
+    grid-template-columns: repeat(2, 27.3%)
+    grid-template-rows: repeat(2, 25rem)
+    grid-gap: 10rem
+    align-items: center
+    justify-content: center
+    margin-top: 4rem
+  &__blog--1
+    grid-column: 1 / 2
+    grid-row: 1 / 2
+    margin-top: 9.3rem
+  &__blog--2
+    grid-column: 2 / 3
+    grid-row: 1 / 2
+    margin-top: 9.4rem
+  &__blog--3
+    grid-column: 1 / 2
+    grid-row: 2 / 3
+    margin-top: 8rem
+  &__blog--4
+    grid-column: 2/ 3
+    grid-row: 2 / 3
+    margin-top: 7.9rem
+  &__texto
+    font-size: 1.65rem
+    text-align: center
+  &__img
+    width: 22rem
+    height: 18rem
+  &__comentar
+    font-size: 1.5rem
+    display: block
+    margin-left: 9rem
+    color: $color_leer_mas_desktop
+    width: 20%
+
+.noticia
+  &__fecha
+    font-size: 1.5rem
+    text-align: center
+    margin-bottom: -1rem
+    margin-top: 3rem
+  &__img
+    width: 33rem
+    margin: 1rem auto
+    display: block
+  &__titulo
+    text-align: center
+    font-size: 2rem
+  &__texto
+    text-align: justify
+    margin: 1rem 12rem
+    font-size: 1.75rem
+  &__comentar
+    color: $color_negro
+    padding: 1rem
+    text-align: center
+    margin: 1.5rem auto
+    display: block
+    width: 20%
+    font-size: 1.75rem
+    background-color: $color_comentar_desktop
+    border: 2px solid $color_negro
+  &__ver
+    display: none
+
+.submenu
+  z-index: 100
+
+.caja__noticias
+  margin: 0 auto
+  width: 60%
+  font-size: 2rem
+  padding: 1rem
+  background:
+    image: url("../img/news/fondo-comentario-noticia.jpg")
+    size: cover
+    position-x: -17rem
+  &__nombre, &__apellidos, &__comentario
+    width: 70%
+  &__x
+    display: block
+    width: 1.5rem
+    margin: 0 44.5rem
+    background: $color_blanco
+    border: 2px $color_fuchsia solid
+    border-radius: 1rem
+    padding: .3rem
+    cursor: pointer
+  &__enviar
+    background: $color_blanco
+
+.modal-comentar-noticias
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  background: #ffff3f33
+  display: flex
+  align-items: center
+  justify-content: center
+
+.caja
+  &__articulo-noticias
+    margin: 0 5rem
+    font-size: 1.75rem
+  &__nombre-noticias
+    color: #DB006A
+
+.page-item
+  font-size: 1.65rem
+  list-style: none
+
+.pagination
+  display: flex
+  grid-gap: 2rem
+  align-items: center
+  justify-content: center
+  color: $color_negro
+  font-size: 1.7rem
+  list-style: none
+  cursor: pointer
+  &__item
+    background: $color_submenu
+    color: $color_blanco
+    padding: .3rem

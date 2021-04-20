@@ -1,0 +1,98 @@
+// Página de inicio...
+.nav--ver
+  transform: translateX(0)
+
+.animal__unicornio, .noticoncer
+  display: none
+
+.generos
+  &__home
+    margin: 0 auto
+  &__dragon
+    width: 100%
+    position: absolute
+    margin-left: 3rem
+    margin-top: -8rem
+    transform: rotate(-50deg)
+  &__link
+    font-size: 2.3rem
+    color: $color_blanco
+    border: 2px solid $color_blanco
+    display: flex
+    align-items: center
+    justify-content: space-around
+    margin-top: 4rem
+  &__alert
+    text-align: center
+    font-size: 1.5rem
+    margin-top: 1rem
+    color: $color_amarillo
+    background: $color_negro
+  &__categoria
+    display: grid
+    width: 14.5rem
+    margin: 0 auto
+
+  &__categoria > a
+    align-items: center
+    justify-content: center
+    background-color: transparentize($color_blanco, .6)
+    color: $color_verde_neon
+    margin-top: 1.8rem
+    height: 3.5rem
+
+.carrousel-phone
+  margin-top: 5rem
+  .swiper-container
+    width: 18rem
+  .swiper-img
+    object-fit: cover
+  .swiper-button-next, .swiper-button-prev
+    color: $color_verde_neon
+  .swiper-pagination-bullet
+    background-color: $color_verde_neon
+  .swiper-text
+    display: flex
+    align-items: center
+    font-size: 1.75rem
+    text-align: center
+    margin-top: 1rem
+    padding-bottom: 1rem
+  .swiper-title
+    font-size: 1.60rem
+    text-align: center
+    margin-top: 1.3rem
+    color: $color_blanco
+
+//CARTEL COOKIES
+.cookies
+  position: fixed
+  top: 0
+  bottom: 0
+  left: 0
+  right: 0
+  background: #522C5C
+  color: $color_blanco
+  text-align: center
+  padding: 1rem
+  z-index: 100
+  font-size: 1.1rem
+  display: flex
+  align-items: center
+  justify-content: center
+  grid-gap: 1.8rem
+  flex-direction: column
+  &__texto
+    font-size: 1.2rem
+  &__palabra
+    color: $color_amarillo
+  &__boton
+    background: initial
+    border: 2px solid $color_blanco
+    padding: 1rem
+    font-size: 1.3rem
+    color: $color_blanco
+    width: 5rem
+    text-align: center
+    cursor: pointer
+    margin: .3rem

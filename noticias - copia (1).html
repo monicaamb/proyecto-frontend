@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>Noticias</title>
+    <link rel="icon" type="image/png" href="img/home/favicon.png">
+    <meta name="theme-color" content="#3c790a">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+    <meta name="author" content="Mónica">
+    <meta name="generator" content="Clojure">
+    <meta name="keywords" content="blog, musica, pixel, art, canciones, conciertos">
+    <meta property="og:title" content="Blog Música">
+    <meta property="og:type" content="website">
+    <meta property="og:image:secure_url" content="https://...">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="400">
+    <meta property="og:image:height" content="300">
+    <meta property="og:image:alt" content="">
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link href="css/mobile.css" rel="stylesheet" media="all and (max-width: 600px)">
+    <link href="css/desktop.css" rel="stylesheet" media="all and (min-width: 600px)">
+    <!-- End CSS -->
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/gh/tanrax/FFNM@1.5.0/dist/ffnm.min.js" integrity="sha384-qlI8XJcMcJMh52x4w9HA9ItB8KmW6pKaJXijVQFl6UvT1nGCH+U6Y7sbbc11HkCH" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/vendors/vue.min.js"></script>
+    <script defer src="js/noticias.js"></script>
+    <!-- End Scripts -->
+    <!-- Animation -->
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- End Animation -->
+</head>
+<body>
+<!-- HEADER -->
+<header class="header">
+    <div class="container">
+        <a href="index.html" class="header__logo">
+            <img src="../img/home/PIXLMUSIC_reketbueno.png" alt="Pixl-Music_logo" class="header__icon">
+        </a>
+        <p class="typewriter">No me juzguéis por no tener ni idea de música</p>
+    </div>
+</header>
+<nav class="nav" id="nav">
+    <div class="container">
+        <a href="index.html" class="nav__castillo">
+            <img src="img/home-phone/castle.png" alt="Castillo" class="nav__img">
+        </a>
+        <ul class="nav__ul">
+            <li class="menu__item">
+                <a class="nav__link">Canciones</a>
+                <ul class="submenu">
+                    <li>
+                        <a href="canciones-rock.html">Rock</a>
+                    </li>
+                    <li>
+                        <a href="canciones-poprock.html">Pop-Rock</a>
+                    </li>
+                    <li>
+                        <a href="canciones-hiphop.html">Hip-Hop</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="menu__item">
+                <a href="noticias.html" class="nav__link">Noticias</a>
+            </li>
+            <li class="menu__item">
+                <a href="conciertos.html" class="nav__link">Conciertos</a>
+            </li>
+            <li class="menu__item">
+                <a href="contacto.html" class="nav__link">Contacto</a>
+            </li>
+        </ul>
+        <!-- Boton hamburguesita cerrar-->
+        <button class="nav__cerrar-menu" is-click="class:remove('nav--ver', '#nav')">
+            <img src="img/home-phone/close.png" alt="Cerrar-menu" class="nav__cerrar-menu-img">
+        </button>
+        <!-- End Boton hamburguesita cerrar-->
+    </div>
+</nav>
+<!-- Boton hamburguesita abrir-->
+<button class="nav__abrir-menu" is-click="class:add('nav--ver', '#nav')">
+    <img src="img/home-phone/menu.png" alt="Abrir-menu" class="nav__abrir-menu-img">
+</button>
+<!-- End Boton hamburguesita abrir -->
+<!-- END HEADER -->
+<!-- MAIN -->
+<main class="main noticia">
+    <div id="new-1">
+        <div class="container">
+            <p class="noticia__fecha">02/01/2021</p>
+            <p>
+                <img src="../img/home/love.jpg" alt="love-of-lesbian" class="noticia__img">
+            </p>
+            <h1 class="noticia__titulo">La veterana y exitosa banda Love Of Lesbian<br> lanzan el primer single de su nuevo álbum</h1>
+            <p class="noticia__texto">Siempre es una gran noticia. La vuelta a escena de una banda como Love Of Lesbian nos llena de esperanza. Una formación que desde su arranque, allá por 1997, nos ha entregado un puñado de solidos álbumes y un buen montón de inolvidables canciones, tanto por su música como por sus letras y por su (s) sentimiento (s).</p>
+
+            <p class="noticia__texto">Hay que tener en cuenta que una de las grandes contradicciones de todo creador es enfrentarse al dolor que muchas veces ha generado su obra. Y no solamente eso, sino que en el mundo de la música dicho momento se perpetúa y reitera a cada concierto, sirviendo de terapia para muchos. La emoción del compositor es el chivo expiatorio que intenta sanar esta frustración comunicativa que, paradójicamente, es uno de los males en esta sociedad de hoy en día, tan viralizable y a la vez compuesta de seres cada vez más aislados.</p>
+
+            <p class="noticia__texto">Este es el primer avance del nuevo álbum de Love Of Lesbian, que intenta definir nuestras vidas en general, a caballo entre las heroicidades diarias y lo absurdo e irreal que todo parece. Esta canción sintetiza la intención de este nuevo disco. Este avance intenta reflejar una lealtad, cual juramento, al discurso musical y poético de Love of Lesbian, una lealtad irremediable porque siempre parte de la norma de que aquello que arde en tus entrañas, sea como sea, acabará emocionando al resto, porque, al fin y al cabo, todos estamos hechos del mismo polvo estelar.</p>
+            <p>
+                <img src="../img/news/lovesegunda.jpg" alt="love-of-lesbian" class="noticia__img">
+            </p>
+            <p class="noticia__texto">“Cosmos (Antisistema Solar)” surgió en cinco minutos. Como un torrente emocional. Como una necesidad de hablar con uno mismo antes de aclarar las cosas con segundas personas. “Cosmos” (el nombre abreviado de esta composición) es un viaje desde las profundidades de la urbe, hacia el Big Bang de un lamento que vuelve a crear tu siguiente firmamento mental. “Cosmos” es la contradicción de haber hecho de tus emociones una manera de vivir. La auto-provocación de una catarsis que a veces es necesaria para seguir adelante. La pretensión de la banda es que cada uno de sus seguidores, de aquellos que escuchen la canción la hagan suya y que les sirva como un estallido interior. Porque, dicen, “Cosmos” puede ser un día cualquiera en la vida de cualquiera de nosotros.</p>
+
+            <p class="noticia__texto">El nuevo disco de Love Of Lesbian lleva por título “V.E.H.N.” y aparece 5 años después del lanzamiento de su último álbum de estudio “El Poeta Halley”. “V.E.H.N.” es el acrónimo de “Viaje Épico Hacia La Nada” e incluye doce nuevas canciones que han sido grabadas en La Casamuraada y en Blind Records y que están producidas por Ricky Falkner y Santos & Fluren. Incluye las colaboraciones de Bunbury y de Cristina Martínez y Álbaro Arizaleta de El Columpio Asesino. El arte del disco ha sido realizado por el premiado y reconocido diseñador Javier Jaén.</p>
+
+            <p class="noticia__texto">El nuevo disco de Love Of Lesbian ya se puede reservar y las pre-órdenes estarán firmadas por la banda. Aparecerá en CD, CD con Single CD y camiseta, LP vinilo negro (o blanco) con CD y Single Vinilo Blanco, camiseta… en fin, un montón de posibilidades y todas muy jugosas para los seguidores.</p>
+            <hr class="separador">
+            <div class="noticias__enlaces-noticia--1">
+                <button @click="showModalComentarNoticia1 = true" class="noticia__comentar">Comentar</button>
+                <button @click="showModalComentariosNoticia1 = true" class="noticia__ver">Ver comentarios</button>
+            </div>
+        </div>
+        <!-- Comentar Noticia 1 -->
+        <div v-if="showModalComentarNoticia1" class="modal-comentar-noticias">
+            <form class="caja__noticias">
+                <div class="container">
+                    <p>
+                        <img class="caja__x" src="img/home-phone/close.png" @click="showModalComentarNoticia1 = false">
+                    </p>
+                    <p>
+                        <label>
+                            Nombre*
+                            <input v-model="nuevoNombreNoticia1" class="caja__nombre" type="text"/>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            Apellido(s)
+                            <input v-model="nuevoApellidoNoticia1" class="caja__apellidos" type="text"/>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            Comentario*
+                            <textarea v-model="nuevoComentarioNoticia1" class="caja__comentario" type="text"></textarea>
+                        </label>
+                    </p>
+                    <p v-if="!validoNuevoNombre && botonPulsadoNuevo" class="caja__requisito-nombre">
+                        ¡Oye! ¿Y tu nombre qué? Es más bonito de lo que crees
+                    </p>
+                    <p v-if="!validoNuevoComentario && botonPulsadoNuevo" class="caja__requisito-comentario">
+                        ¿De verdad no vas a comentar nada? :(
+                    </p>
+                    <p>
+                        <input @click.prevent="logicaCrearComentario"
+                               class="caja__enviar"
+                               type="submit"
+                               value="Enviar"
+                        />
+                    </p>
+                </div>
+            </form>
+        </div>
+        <!-- Fin Comentar Noticia 1 -->
+        <!-- Ver comentarios Noticia 1 -->
+        <article class="caja__articulo-noticias" v-for="item in datosPaginados">
+            <p class="caja__nombre-noticias">
+                {{ item.nombre }} {{ item.fields.Nombre }} {{ item.apellido }} {{ item.fields.Apellidos }}
+            </p>
+            <p class="caja__comentario-noticias">
+                {{ item.comentario }} {{ item.fields.Comentario }}
+            </p>
+        </article>
+        <nav>
+            <ul class="pagination">
+                <li @click.prevent="paginaAnterior"><div href="#" class="pagination__item">Anterior</div></li>
+                <li @click.prevent="contenidoPagina(pagina)" v-for="pagina in totalPaginas()"><div href="#">{{ pagina }}</div></li>
+                <li @click.prevent="paginaSiguiente"><div href="#" class="pagination__item">Siguiente</div></li>
+            </ul>
+        </nav>
+        <!-- Fin Ver comentarios Noticia 1 -->
+        <!-- Ver comentarios MÓVIL -->
+        <div v-if="showModalComentariosNoticia1" class="modal-criticas">
+            <div class="container">
+                <div class="caja-criticas">
+                    <p>
+                        <img class="caja__x-comentarios" src="img/home-phone/close.png" alt="" @click="showModalComentariosNoticia1 = false">
+                    </p>
+                    <div v-if="infosNoticia1.length > 0" class="caja__articulo">
+                        <article v-for="infoNoticia1 in infosNoticia1">
+                            <p class="caja__nombre-comentarios">
+                                {{ infoNoticia1.nombre }} {{ infoNoticia1.fields.Nombre }} {{ infoNoticia1.apellido }} {{ infoNoticia1.fields.Apellidos }}
+                            </p>
+                            <p class="caja__comentario-comentarios">
+                                {{ infoNoticia1.comentario }} {{ infoNoticia1.fields.Comentario }}
+                            </p>
+                        </article>
+                    </div>
+                    <p v-else class="spinner"></p>
+                </div>
+            </div>
+        </div>
+        <!-- Fin Ver comentarios MÓVIL -->
+    </div>
+</main>
+<!-- END MAIN -->

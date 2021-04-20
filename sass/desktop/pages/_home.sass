@@ -1,0 +1,219 @@
+// Página de inicio...
+.generos
+  &__dragon
+    display: none
+  &__home
+    margin-top: 5rem
+    display: flex
+    justify-content: space-around
+    align-items: center
+  &__link
+    border: 4px solid $color_verdecito
+    color: $color_negro
+    justify-content: center
+    align-items: center
+    display: flex
+    &--rock
+      width: 260px
+      height: 202px
+      text-transform: uppercase
+      font-size: 2.3rem
+      background:
+        image: url("../img/home/fondo-ordena.png")
+        size: cover
+        repeat: no-repeat
+        position: center left
+    &--rock:hover
+      color: $color_blanco
+      background: $color_verdecito
+    &--poprock
+      width: 260px
+      height: 202px
+      text-transform: uppercase
+      font-size: 2.3rem
+      background:
+        image: url("../img/home/fondo-ordena-rock.png")
+        size: cover
+    &--poprock:hover
+      color: $color_blanco
+      background: $color_verdecito
+    &--hiphop
+      width: 260px
+      height: 202px
+      text-transform: uppercase
+      font-size: 2.3rem
+      background:
+        image: url("../img/home/fondo-ordena-hh.png")
+        size: cover
+        position: inherit
+    &--hiphop:hover
+      color: $color_blanco
+      background: $color_verdecito
+  &__actualizacion
+    margin-top: 6rem
+    text-align: center
+  &__alert
+    font-size: 2rem
+    background-color: $color_lila
+    color: $color_blanco
+    border: 4px solid $color_verdecito
+    padding: 2rem
+    width: 75%
+    margin: 0 auto
+
+.animal
+  display: grid
+  grid-template-columns: repeat(5, 14rem)
+  grid-template-rows: repeat(1, 19rem)
+  align-items: center
+  margin-top: -8rem
+  margin-left: 13.8rem
+  &__unicornio
+    grid-column: 5 / 6
+    grid-row: 1 / 2
+
+.noticoncer
+  .container
+    margin-top: -2rem
+  &__1
+    grid-column: 1 / 2
+  &__2
+    grid-column: 2 / 3
+  &__3
+    grid-column: 3 / 4
+  &__4
+    grid-column: 4 / 5
+  &__home
+    display: grid
+    grid-template-columns: repeat(4, 16rem)
+    grid-template-rows: 20rem
+    grid-gap: 3rem
+    justify-content: space-around
+    text-align: center
+    background:
+      image: url("../img/home/noticoncer.png")
+      position: right
+      size: cover
+    height: 27rem
+    margin-top: 1rem
+    align-items: center
+  &__texto
+    font-size: 1.5em
+    color: dimgrey
+    margin-top: 8.5rem
+  &__intro
+    font-size: 1.7rem
+    color: $color_negro
+  &__intro:hover
+    color: $color_blanco
+    background-color: $color_negro
+  &__h1
+    text-align: center
+    color: grey
+    font-size: 2rem
+
+//animaciones-albumes
+.albumes
+  margin-top: 4rem
+  display: grid
+  grid-template-columns: repeat(8, 12.05rem)
+  grid-template-rows: 12.05rem
+  &__album--1
+    background-size: cover
+    animation:
+      name: aniFadeIn1
+      duration: 6s
+      iteration-count: infinite
+      direction: alternate
+  &__album--2
+    background-size: cover
+    animation:
+      name: aniFadeIn2
+      duration: 6s
+      iteration-count: infinite
+      direction: alternate
+  &__album--3
+    background-size: cover
+    animation:
+      name: aniFadeIn3
+      duration: 6s
+      iteration-count: infinite
+      direction: alternate
+  &__album--4
+    background-size: cover
+    animation:
+      name: aniFadeIn4
+      duration: 6s
+      iteration-count: infinite
+      direction: alternate
+  &__album--5
+    background-size: cover
+    animation:
+      name: aniFadeIn5
+      duration: 6s
+      iteration-count: infinite
+      direction: alternate
+  &__album--6
+    background-size: cover
+    animation:
+      name: aniFadeIn6
+      duration: 6s
+      iteration-count: infinite
+      direction: alternate
+  &__album--7
+    background-size: cover
+    animation:
+      name: aniFadeIn7
+      duration: 6s
+      iteration-count: infinite
+      direction: alternate
+
+@keyframes aniFadeIn1
+
+@keyframes aniFadeIn2
+
+@keyframes aniFadeIn3
+
+@keyframes aniFadeIn4
+
+@keyframes aniFadeIn5
+
+@keyframes aniFadeIn6
+
+@keyframes aniFadeIn7
+
+.carrousel-phone
+  display: none
+
+//CARTEL COOKIES
+.cookies
+  position: fixed
+  bottom: 0
+  left: 0
+  right: 0
+  background: #A8ABCC
+  color: $color_blanco
+  text-align: center
+  padding: 1.1rem
+  z-index: 100
+  font-size: 1.1rem
+  display: flex
+  align-items: center
+  justify-content: center
+  grid-gap: 1rem
+  &__texto
+    font-size: 1.3rem
+  &__palabra
+    color: #55578A
+  &__aceptar, &__rechazar
+    background: initial
+    border: 2px solid $color_blanco
+    padding: 1rem
+    font-size: 1.3rem
+    color: $color_blanco
+    width: 5rem
+    text-align: center
+    cursor: pointer
+    &:hover
+      background: #55578A
+      color: $color_blanco
