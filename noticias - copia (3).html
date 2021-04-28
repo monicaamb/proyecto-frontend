@@ -158,15 +158,18 @@
         </div>
         <!-- Fin Comentar Comentar Noticia 3 -->
         <!-- Ver comentarios Comentar Noticia 3 -->
-        <article class="caja__articulo-noticias" v-for="item in datosPaginados">
-            <p class="caja__nombre-noticias">
-                {{ item.nombre }} {{ item.fields.Nombre }} {{ item.apellido }} {{ item.fields.Apellidos }}
-            </p>
-            <p class="caja__comentario-noticias">
-                {{ item.comentario }} {{ item.fields.Comentario }}
-            </p>
-        </article>
-        <nav>
+        <div v-if="infosNoticia3.length > 0" class="caja__articulo">
+            <article class="caja__articulo-noticias" v-for="item in datosPaginados">
+                <p class="caja__nombre-noticias">
+                    {{ item.nombre }} {{ item.fields.Nombre }} {{ item.apellido }} {{ item.fields.Apellidos }}
+                </p>
+                <p class="caja__comentario-noticias">
+                    {{ item.comentario }} {{ item.fields.Comentario }}
+                </p>
+            </article>
+        </div>
+        <p v-else class="caja__primer-comentario">Sé el primero en comentar algo ;)</p>
+        <nav v-if="infosNoticia3.length > 0">
             <ul class="pagination">
                 <li @click.prevent="paginaAnterior"><div href="#" class="pagination__item">Anterior</div></li>
                 <li @click.prevent="contenidoPagina(pagina)" v-for="pagina in totalPaginas()"><div href="#">{{ pagina }}</div></li>
