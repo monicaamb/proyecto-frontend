@@ -282,6 +282,38 @@
                 </div>
             </div>
             <!-- Fin Ver comentarios Canción Pop-Rock 2 -->
+            <hr class="separador">
+            <!-- Canción Pop-Rock 3 -->
+            <div class="canciones__rock canciones__rock--3">
+                <p class="canciones__cover canciones__cover--6">Mac DeMarco-Salad Days</p>
+                <img class="canciones__album canciones__album--3" src="img/songs/mac.jpg" alt="Mac DeMarco">
+                <ul class="canciones__ul-rock canciones__ul-rock--3">
+                    <li class="canciones__li">
+                        <p class="canciones__titulo">1. Salad Days</p>
+                        <audio class="canciones__audio" controls src="music/POP-ROCK/3/Salad Days.mp3">Mac DeMarco-Salad Days</audio>
+                    </li>
+                    <li class="canciones__li">
+                        <p class="canciones__titulo">2. Blue Boy</p>
+                        <audio class="canciones__audio" controls src="music/POP-ROCK/3/Blue Boy.mp3">Mac DeMarco-Blue Boy</audio>
+                    </li>
+                    <li class="canciones__li">
+                        <p class="canciones__titulo">3. Passing Out Pieces</p>
+                        <audio class="canciones__audio" controls src="music/POP-ROCK/3/Passing.mp3">Mac DeMarco-Passing Out Pieces</audio>
+                    </li>
+                    <li class="canciones__li">
+                        <p class="canciones__titulo">4. Treat Her Better</p>
+                        <audio class="canciones__audio" controls src="music/POP-ROCK/3/Treat.mp3">Cage The Elephant-Treat Her Better</audio>
+                    </li>
+                    <li class="canciones__li">
+                        <p class="canciones__titulo">5. Chamber of Reflection</p>
+                        <audio class="canciones__audio" controls src="music/POP-ROCK/3/Chamber.mp3">Mac DeMarco-Chamber of Reflection</audio>
+                    </li>
+                </ul>
+                <div class="canciones__enlaces-rock--3">
+                    <button @click="showModalComentarPopRock3 = true" class="canciones__comentar">Comentar</button>
+                    <button @click="showModalComentariosPopRock3 = true" class="canciones__ver">Ver comentarios</button>
+                </div>
+            </div>
             <!-- Comentar Canción Pop-Rock 3 -->
             <div v-if="showModalComentarPopRock3" class="modal-comentar">
                 <form class="caja">
@@ -324,7 +356,6 @@
                 </form>
             </div>
             <!-- Fin Comentar Canción Pop-Rock 3 -->
-
             <!-- Ver comentarios Canción Pop-Rock 3 -->
             <div v-if="showModalComentariosPopRock3" class="modal-criticas">
                 <div class="caja-criticas">
@@ -347,38 +378,6 @@
                 </div>
             </div>
             <!-- Fin Ver comentarios Canción Pop-Rock 3 -->
-            <hr class="separador">
-            <!-- Canción Pop-Rock 3 -->
-            <div class="canciones__rock canciones__rock--3">
-                <p class="canciones__cover canciones__cover--6">Mac DeMarco-Salad Days</p>
-                <img class="canciones__album canciones__album--3" src="img/songs/mac.jpg" alt="Mac DeMarco">
-                <ul class="canciones__ul-rock canciones__ul-rock--3">
-                    <li class="canciones__li">
-                        <p class="canciones__titulo">1. Salad Days</p>
-                        <audio class="canciones__audio" controls src="music/POP-ROCK/3/Salad Days.mp3">Mac DeMarco-Salad Days</audio>
-                    </li>
-                    <li class="canciones__li">
-                        <p class="canciones__titulo">2. Blue Boy</p>
-                        <audio class="canciones__audio" controls src="music/POP-ROCK/3/Blue Boy.mp3">Mac DeMarco-Blue Boy</audio>
-                    </li>
-                    <li class="canciones__li">
-                        <p class="canciones__titulo">3. Passing Out Pieces</p>
-                        <audio class="canciones__audio" controls src="music/POP-ROCK/3/Passing.mp3">Mac DeMarco-Passing Out Pieces</audio>
-                    </li>
-                    <li class="canciones__li">
-                        <p class="canciones__titulo">4. Treat Her Better</p>
-                        <audio class="canciones__audio" controls src="music/POP-ROCK/3/Treat.mp3">Cage The Elephant-Treat Her Better</audio>
-                    </li>
-                    <li class="canciones__li">
-                        <p class="canciones__titulo">5. Chamber of Reflection</p>
-                        <audio class="canciones__audio" controls src="music/POP-ROCK/3/Chamber.mp3">Mac DeMarco-Chamber of Reflection</audio>
-                    </li>
-                </ul>
-                <div class="canciones__enlaces-rock--3">
-                    <button @click="showModalComentarPopRock3 = true" class="canciones__comentar">Comentar</button>
-                    <button @click="showModalComentariosPopRock3 = true" class="canciones__ver">Ver comentarios</button>
-                </div>
-            </div>
         </div>
     </div>
 </main>

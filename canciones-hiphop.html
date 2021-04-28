@@ -279,6 +279,38 @@
                 </div>
             </div>
             <!-- Fin Ver comentarios Canción Hip-Hop 2 -->
+            <hr class="separador">
+            <!-- Canción Hip-Hop 3 -->
+            <div class="canciones__rock canciones__rock--3">
+                <p class="canciones__cover canciones__cover--9">Travis Scott-Astroworld</p>
+                <img class="canciones__album canciones__album--3" src="img/songs/travis.jpg" alt="Travis Scott">
+                <ul class="canciones__ul-rock canciones__ul-rock--3">
+                    <li class="canciones__li">
+                        <p class="canciones__titulo">1. STARGAZING</p>
+                        <audio class="canciones__audio" controls src="music/HIP-HOP/3/star.mp3">Travis Scott-Stargazing</audio>
+                    </li>
+                    <li class="canciones__li">
+                        <p class="canciones__titulo">2. SICKO MODE</p>
+                        <audio class="canciones__audio" controls src="music/HIP-HOP/3/sicko.mp3">Travis Scott-Sicko Mode</audio>
+                    </li>
+                    <li class="canciones__li">
+                        <p class="canciones__titulo">3. STOP TRYING TO BE GOD</p>
+                        <audio class="canciones__audio" controls src="music/HIP-HOP/3/stop.mp3">Travis Scott-Stop trying to be God</audio>
+                    </li>
+                    <li class="canciones__li">
+                        <p class="canciones__titulo">4. SKELETONS</p>
+                        <audio class="canciones__audio" controls src="music/HIP-HOP/3/skeletons.mp3">Travis Scott-Skeletons</audio>
+                    </li>
+                    <li class="canciones__li">
+                        <p class="canciones__titulo">5. BUTTERFLY EFFECT</p>
+                        <audio class="canciones__audio" controls src="music/HIP-HOP/3/butterfly.mp3">Travis Scott-Butterfly Effect</audio>
+                    </li>
+                </ul>
+                <div class="canciones__enlaces-rock--3">
+                    <button @click="showModalComentarHipHop3 = true" class="canciones__comentar">Comentar</button>
+                    <button @click="showModalComentariosHipHop3 = true" class="canciones__ver">Ver comentarios</button>
+                </div>
+            </div>
             <!-- Comentar 3 Canción Hip-Hop 3 -->
             <div v-if="showModalComentarHipHop3" class="modal-comentar">
                 <form class="caja">
@@ -320,7 +352,6 @@
                 </form>
             </div>
             <!-- Fin Comentar Canción Hip-Hop 3 -->
-
             <!-- Ver comentarios Canción Hip-Hop 3 -->
             <div v-if="showModalComentariosHipHop3" class="modal-criticas">
                 <div class="caja-criticas">
@@ -343,38 +374,6 @@
                 </div>
             </div>
             <!-- Fin Ver comentarios Canción Hip-Hop 3 -->
-            <hr class="separador">
-            <!-- Canción Hip-Hop 3 -->
-            <div class="canciones__rock canciones__rock--3">
-                <p class="canciones__cover canciones__cover--9">Travis Scott-Astroworld</p>
-                <img class="canciones__album canciones__album--3" src="img/songs/travis.jpg" alt="Travis Scott">
-                <ul class="canciones__ul-rock canciones__ul-rock--3">
-                    <li class="canciones__li">
-                        <p class="canciones__titulo">1. STARGAZING</p>
-                        <audio class="canciones__audio" controls src="music/HIP-HOP/3/star.mp3">Travis Scott-Stargazing</audio>
-                    </li>
-                    <li class="canciones__li">
-                        <p class="canciones__titulo">2. SICKO MODE</p>
-                        <audio class="canciones__audio" controls src="music/HIP-HOP/3/sicko.mp3">Travis Scott-Sicko Mode</audio>
-                    </li>
-                    <li class="canciones__li">
-                        <p class="canciones__titulo">3. STOP TRYING TO BE GOD</p>
-                        <audio class="canciones__audio" controls src="music/HIP-HOP/3/stop.mp3">Travis Scott-Stop trying to be God</audio>
-                    </li>
-                    <li class="canciones__li">
-                        <p class="canciones__titulo">4. SKELETONS</p>
-                        <audio class="canciones__audio" controls src="music/HIP-HOP/3/skeletons.mp3">Travis Scott-Skeletons</audio>
-                    </li>
-                    <li class="canciones__li">
-                        <p class="canciones__titulo">5. BUTTERFLY EFFECT</p>
-                        <audio class="canciones__audio" controls src="music/HIP-HOP/3/butterfly.mp3">Travis Scott-Butterfly Effect</audio>
-                    </li>
-                </ul>
-                <div class="canciones__enlaces-rock--3">
-                    <button @click="showModalComentarHipHop3 = true" class="canciones__comentar">Comentar</button>
-                    <button @click="showModalComentariosHipHop3 = true" class="canciones__ver">Ver comentarios</button>
-                </div>
-            </div>
         </div>
     </div>
 </main>
